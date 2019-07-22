@@ -16,7 +16,7 @@
     </parent>
     
     <properties>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
     </properties>
     
@@ -24,6 +24,15 @@
         <dependency>
             <artifactId>spring-cloud-config-server</artifactId>
             <groupId>org.springframework.cloud</groupId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
         
         <dependency>
@@ -38,6 +47,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
     <dependencyManagement>
         <dependencies>
             <dependency>
