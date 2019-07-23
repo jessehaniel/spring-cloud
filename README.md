@@ -11,12 +11,12 @@ Java 8
 ## Project Organization
 The project contains the server projects: config-server, discovery and gateway; and also the clients: book-service, rating-service and client-refresh. 
 
-<li>The directory `application-config` is a git repository that contains the property files for all applications</li>
-<li>`Config-server` is the configuration server which provides the properties from the git repository (based on application-config)</li>
-<li>`Discovery` is the Eureka name discovery server in which all the projects should be registered</li>
-<li>`Gateway` is the Zuul server acting as a reverse-proxy for name resolve</li>
-<li>`Book-service` and `Rating-service` are two sample web projects offering Rest endpoints</li>
-<li>Finally, `Client-refresh` is a web project that exposes the `message` property in config file and can be refreshed as the message changes</li>
+* The directory `application-config` is a git repository that contains the property files for all applications
+* `Config-server` is the configuration server which provides the properties from the git repository (based on application-config)
+* `Discovery` is the Eureka name discovery server in which all the projects should be registered
+* `Gateway` is the Zuul server acting as a reverse-proxy for name resolve
+* `Book-service` and `Rating-service` are two sample web projects offering Rest endpoints
+* Finally, `Client-refresh` is a web project that exposes the `message` property in config file and can be refreshed as the message changes
 
 ## Usage
 First you need to checkout the repository and compile each project. Then, move the folder `application-config` to your ${HOME} directory (C:\Users\{your-user} on Windows and /home/{your-user} on Unix) and do `git init`, `git add .` and `git commit -m 'your commit message'` into it. This will prepare the repository with the config property files for `Config-server` server.
@@ -30,5 +30,5 @@ It is fundamental to init the repository and commit each file to get the propert
 Pay attention on all the service names. They are used for the identification and bind in Eureka and Zuul servers. 
 
 To know more about each technology, visit
-<li>https://spring.io/projects/spring-cloud-config</li>
-<li>https://spring.io/projects/spring-cloud-netflix</li>
+* https://spring.io/projects/spring-cloud-config
+* https://spring.io/projects/spring-cloud-netflix
